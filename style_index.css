@@ -1,0 +1,274 @@
+.top {
+    background: #F1E4E6;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.man {
+    width: 50%;
+}
+
+.badboy {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    align-items: center; 
+    width: 800px;
+}
+
+.name {
+    margin-left: 64px;
+    padding-left: 16px;
+    border-left: 12px solid #F16D7F;
+}
+
+.one {
+    font-family: "Lato";
+    color: #222222;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.two {
+    font-family: "Lato black";
+    color: #222222;
+    font-size: 32px;    
+}
+
+.pink {
+    color: #F16D7F;
+}
+
+.catalog {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.clothes {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.opac {
+    opacity: 0.9;
+    width: 360px;
+    height: 260px;
+}
+
+.opac2 {
+    opacity: 0.9;
+    height: 180px;
+}
+
+.women {
+    position: relative;
+    height: 260px;
+    background-image: url(img/woman.png);
+    background-size: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-position: center;
+}
+
+.catalog__caption {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    top: 105px;
+    left: 103px;
+}
+
+.acces__caption {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    top: 65px;
+    left: 491px;
+}
+
+.details {
+    font-family: "Lato";
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.category {
+    font-family: "Lato black";
+    font-size: 24px;
+    color: #F16D7F;
+}
+
+.men {
+    position: relative;
+    height: 260px;
+    background-image: url(img/men.png);
+    background-size: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-position: center;
+}
+.kids {
+    position: relative;
+    height: 260px;
+    background-image: url(img/rids.png);
+    background-size: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-position: center;
+}
+
+.accesories {
+    position: relative;
+    height: 180px;
+    margin-top: 30px;
+    background-image: url(img/acces.png);
+    background-size: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-position: center;
+}
+
+.women:hover {
+    background-size: 110%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.men:hover {
+    background-size: 110%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.kids:hover {
+    background-size: 110%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.accesories:hover {
+    background-size: 110%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.items {
+    margin-top: 96px;
+}
+
+.items__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.items__wrapp {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.product {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+}
+
+.product__text {
+    padding-left: 17px;
+}
+
+.product__title {
+    font-family: "Lato";
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 13px;
+    font-family: "Lato";
+    max-width: 315px;
+}
+
+.prod {
+    width: 100%;
+    max-width: 360px;
+    z-index: 0;
+}
+
+.cost {
+    margin-top: 18px;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-bottom: 20px;
+}
+
+.items__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    font-family: "Lato";
+    font-weight: normal;
+}
+
+.items__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    font-family: "Lato";
+    text-align: center;
+    font-weight: normal;
+}
+
+.prod__hov:hover {
+    background: linear-gradient(rgba(58, 56, 56, 0.86), rgba(58, 56, 56, 0.86));
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.browse__but {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.browse {
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    font-family: "Lato";
+    margin-top: 49px;
+    background-color: #FFFFFF;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+
+.browse:hover {
+    background-color: #F26376;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
+}
