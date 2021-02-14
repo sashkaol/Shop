@@ -1,0 +1,155 @@
+.navbar__product {
+    width: 100%;
+    background: #222222;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar__product__wrapp {
+    max-width: 1140px;
+    margin: auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carusel__img {
+    width: 597px;
+}
+
+.carusel__div {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 777px;
+}
+
+.carousel-item {
+    background-color: #F7F7F7;
+    position: absolute;
+    z-index: -1;
+}
+
+.back {
+    background-color: rgba(42, 42, 42, 0.15);
+}
+
+.product__description {
+    max-width: 1140px;
+    margin: -65px auto 130px auto;
+    border: 1px solid rgba(234, 234, 234, 1);
+    background-color: #ffffff;
+    height: 601px;
+}
+
+.product__description__wrapp {
+    max-width: 641px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer__subscribe__product {
+    margin-top: 130px;
+    height: 448px;
+    background-image: url(img/footer_fon.png);
+}
+
+.product__descript__title {
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+    font-family: "Lato light";
+    margin-top: 65px;
+    text-align: center;
+}
+
+.product__descript__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    font-family: "Lato light";
+    margin-top: 27px;
+    text-align: center;
+}
+
+.product__descript__text__wrapp {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    font-family: "Lato light";
+    max-width: 555px;
+    margin: 48px auto 0 auto;
+}
+
+.product__cost {
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    font-family: "Lato light";
+    margin: 32px auto 0 auto;
+    max-width: 56px;
+}
+
+.hr {
+    width: 641px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    margin-top: 65px;
+}
+
+.product__filters__ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.product__filters__category {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    font-family: "Lato";
+}
+
+.product__filters {
+    margin: 65px auto 0 auto;
+}
+
+.prod__but {
+    background: none;
+    max-width: 211px;
+    height: 47px;
+    border: 1px solid #FF6A6A;
+    font-family: "Lato";
+    font-size: 14px;
+    color: #FF6A6A;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    fill: #EF5B70;
+    outline: none;
+    margin: 48px auto 0 auto;
+  }
+
+  .prod__but:hover {
+      cursor: pointer;
+      background-color: #F16D7F;
+      transition: 0.3s ease;
+      color: #ffffff;
+      fill: #ffffff;
+  }
+
+  .add-to {
+      margin-left: 23px;
+  }
+
+  
