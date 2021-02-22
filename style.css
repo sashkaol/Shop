@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+*::selection {
+    color: #FFFFFF;
+    background: #F16D7F;
+}
+
 /*панель навигации*/
 
 .navbar {
@@ -11,7 +16,7 @@
     height: 75px;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 .navbar__wrapp {
@@ -123,6 +128,8 @@
 .footer__subscribe {
     height: 448px;
     background-image: url(img/footer_fon.png);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .subscribe__wrapp {
@@ -236,4 +243,15 @@
     font-family: "Lato";
     font-size: 18px;
     line-height: 30.1px;
+}
+
+.icon__footer {
+    max-width: 47px;
+    width: 100%;
+}
+
+.icon__footer__div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
