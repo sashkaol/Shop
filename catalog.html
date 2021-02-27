@@ -13,12 +13,12 @@
         <div class="navbar__wrapp">
             <div class="img__left">
                 <a href="index.html" class="index"><img class="left" src="img/Group 2.svg" alt="logo"></a>
-                <img class="left" src="img/Forma 1.svg" alt="search">
+                <img class="left search" src="img/Forma 1.svg" alt="search">
             </div>
             <div class="img__right">
                 <img class="right burger" src="img/form.svg" alt="menu">
-                <img class="right" src="img/form3.svg" alt="profile">
-                <a href="cart.html"><img class="right" src="img/Group 35.svg" alt="basket"></a>
+                <a href="registration.html"><img class="right registration" src="img/form3.svg" alt="profile"></a>
+                <a href="cart.html"><img class="right basket" src="img/Group 35.svg" alt="basket"></a>
             </div>
         </div>
     </header>
@@ -28,6 +28,10 @@
             <div class="menu__list">
                 <h1 class="menu__h">MENU</h1>
                 <ul class="menu__ul">
+                    <div class="menu__hrefs">
+                        <li class="category__overlay"><a href="cart.html" class="to-cart">To Cart</a></li>
+                        <li class="category__overlay"><a href="registration.html" class="to-registration">Sign Up</a></li>
+                    </div>
                     <li class="category__overlay">MAN</li>
                         <ul class="category__li">
                             <li class="categories">Accessories</li>
@@ -70,9 +74,12 @@
         <div class="navigate__wrapp">
             <div class="navigate__list">
                 <details class="filter">
-                        <summary class="filter__summary">FILTER 
+                        <summary class="filter__summary">
+                        <div class="summary__title">
+                            FILTER
+                        </div> 
                         <div class="filters__marker">
-                            <svg class="marker" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="marker" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
                             <path id="path1" d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
                             </svg>
                         </div>
@@ -94,11 +101,37 @@
                                 <li class="filter__category__list">Tanks</li>
                             </ul>
                         </details>
-                        <details>
+                        <details class="category__open">
                             <summary class="category__summary">BRAND</summary>
+                            <ul class="category__big__list">
+                                <li class="filter__category__list">Accessories</li>
+                                <li class="filter__category__list">Bags</li>
+                                <li class="filter__category__list">Denim</li>
+                                <li class="filter__category__list">Hoodies & Sweatshirts</li>
+                                <li class="filter__category__list">Jackets & Coats</li>
+                                <li class="filter__category__list">Polos</li>
+                                <li class="filter__category__list">Shirts</li>
+                                <li class="filter__category__list">Shoes</li>
+                                <li class="filter__category__list">Sweaters & Knits</li>
+                                <li class="filter__category__list">T-Shirts</li>
+                                <li class="filter__category__list">Tanks</li>
+                            </ul>
                         </details>
-                        <details>
+                        <details class="category__open">
                             <summary class="category__summary">DESIGNER</summary>
+                            <ul class="category__big__list">
+                                <li class="filter__category__list">Accessories</li>
+                                <li class="filter__category__list">Bags</li>
+                                <li class="filter__category__list">Denim</li>
+                                <li class="filter__category__list">Hoodies & Sweatshirts</li>
+                                <li class="filter__category__list">Jackets & Coats</li>
+                                <li class="filter__category__list">Polos</li>
+                                <li class="filter__category__list">Shirts</li>
+                                <li class="filter__category__list">Shoes</li>
+                                <li class="filter__category__list">Sweaters & Knits</li>
+                                <li class="filter__category__list">T-Shirts</li>
+                                <li class="filter__category__list">Tanks</li>
+                            </ul>
                         </details>
                     </div>
                 </details>
@@ -303,7 +336,7 @@
                         <p class="cost">$52.00</p>
                     </div>
                 </div>
-                <div class="product">
+                <div class="product last-child">
                     <div class="prod__picture">
                         <img src="img/catalog men9.png" class="prod__img" alt="" />
                         <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">

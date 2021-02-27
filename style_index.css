@@ -2,9 +2,14 @@
     background: #F1E4E6;
     display: flex;
     justify-content: space-between;
+    margin-top: 75px;
+}
+
+.top__wrapp {
+    display: flex;
+    justify-content: space-between;
     max-width: 1600px;
     margin: 0 auto;
-    margin-top: 75px;
 }
 
 .man {
@@ -18,13 +23,17 @@
 .main {
     display: flex;
     align-items: center; 
-    width: 800px;
+    width: 50%;
 }
 
 .name {
+    max-width: 377px;
+    display: flex;
+    flex-direction: column;
     margin-left: 64px;
     padding-left: 16px;
     border-left: 12px solid #F16D7F;
+    margin-right: 34px;
 }
 
 .one {
@@ -51,7 +60,8 @@
 
 .clothes {
     margin-top: 65px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1140px;
@@ -60,44 +70,58 @@
 
 .opac {
     opacity: 0.9;
-    width: 360px;
-    height: 260px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .opac2 {
     opacity: 0.9;
-    height: 180px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
 }
 
 .women {
     position: relative;
     height: 260px;
     background-image: url(img/woman.png);
-    background-size: 100%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 100%;
+    transition: background-size 0.5s ease-in-out;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .catalog__caption {
-    position: absolute;
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 154px;
-    top: 105px;
-    left: 103px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    
 }
 
 .acces__caption {
-    position: absolute;
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 160px;
-    top: 65px;
-    left: 491px;
+    width: 100%;
+    z-index: 1;
+    text-decoration: none;
 }
+
+.acces__wrapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
 
 .details {
     font-family: "Lato";
@@ -115,19 +139,21 @@
     position: relative;
     height: 260px;
     background-image: url(img/men.png);
-    background-size: 100%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 100%;
+    transition: background-size 0.5s ease-in-out;
     background-position: center;
+    background-repeat: no-repeat;
 }
 .kids {
     position: relative;
     height: 260px;
     background-image: url(img/rids.png);
-    background-size: 100%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s ease-in-out;
     background-position: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .accesories {
@@ -135,37 +161,37 @@
     height: 180px;
     margin-top: 30px;
     background-image: url(img/acces.png);
-    background-size: 100%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 100%;
+    transition: background-size 0.5s ease-in-out;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
 }
 
 .women:hover {
-    background-size: 110%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 120%;
+    transition: background-size 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .men:hover {
-    background-size: 110%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 120%;
+    transition: background-size 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .kids:hover {
-    background-size: 110%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 120%;
+    transition: background-size 0.5s ease-in-out;
     cursor: pointer;
 }
 
 .accesories:hover {
-    background-size: 110%;
-    transition-property: all;
-    transition-duration: 0.5s;
+    background-size: auto 120%;
+    transition: background-size 0.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -174,8 +200,9 @@
 }
 
 .items__catalog {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 360px);
+    justify-content: center;
     gap: 30px;
     margin-top: 48px;
 }
@@ -183,6 +210,8 @@
 .items__wrapp {
     margin: 0 auto;
     max-width: 1140px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .product {
@@ -324,4 +353,102 @@
 
     .add {
         margin-left: 7px;
-    }      
+    }  
+
+    @media screen and (max-width: 769px) and (min-width: 377px) {
+
+        .man {
+            display: none;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .top {
+            height: 363px;
+        }
+
+        .clothes {
+            grid-template-columns: minmax(190px, 350px) minmax(190px, 350px);
+            height: 100%;
+            justify-content: center;
+        }
+
+        .kids {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-size: 100%;
+        }
+
+        .kids:hover {
+            background-size: 120%;
+        }
+
+        .opac {
+            min-width: 100%;
+            width: 100%;
+        }
+
+        .one {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        .two {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .accesories {
+            max-width: 730px;
+            margin: 30px auto;
+        }
+    }
+
+    @media screen and (max-width: 376px) {
+        .clothes {
+            grid-template-columns: 1fr;
+            height: 100%;
+            max-width: 343px;
+            margin: 64px auto 0 auto;
+        }
+
+        .top {
+            height: 363px;
+        }
+
+        .man {
+            display: none;
+        }
+    
+        .badboy {
+            overflow: hidden;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .name {
+            justify-content: center;
+            width: 236px;
+        }
+
+        .one {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        .two {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .accesories {
+            max-width: 343px;
+            margin: 30px auto 0 auto;
+        }
+    }
+    

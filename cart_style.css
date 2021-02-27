@@ -128,6 +128,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     outline: none;
+    text-transform: uppercase;
 }
 
 .to-catalog {
@@ -277,4 +278,225 @@ input::-webkit-inner-spin-button {
     right: 22px;
     top: 28px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 569px) {
+    .cart__wrapp {
+        max-width: 704px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .buttons__cart {
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .shipping {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        width: 100%;
+    }
+
+    .cart__input__form {
+        margin-top: 64px;
+        display: flex;
+        max-width: 704px;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .menu__wrapp__cart {
+        max-width: 1000px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 568px) and (min-width: 377px) {
+    .cart__wrapp {
+        max-width: 415px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buttons__cart {
+        justify-content: center;
+        gap: 48px;
+    }
+
+    .shipping {
+        display: flex;
+        flex-direction: column;
+        max-width: 415px;
+        width: 100%;
+    }
+
+    .cart__input__form {
+        margin: 64px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 415px;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .menu__wrapp__cart {
+        max-width: 425px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card__options {
+        margin-top: 20px;
+    }
+
+    .cart__card {
+        max-width: 415px;
+        height: 188px;
+    }
+
+    .cart__cards {
+        max-width: 415px;
+    }
+
+    .cart__cheque {
+        max-width: 415px;
+        width: 100%;
+    }
+    
+    .cart__img {
+        max-width: 143px;
+        width: 100%;
+        height: 188px;
+    }
+
+    .card__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .svg-close {
+        width: 10px;
+    }
+
+    .cart__close {
+        right: 12px;
+        top: 20px
+    }
+
+    .option {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card__description__wrapp {
+        max-width: 143px;
+        width: 100%;
+    }
+
+    .card__description {
+        max-width: 214px;
+        width: 100%;
+    }
+
+    .cart__cheque__wrapp {
+        max-width: 100%;
+    }
+
+    .cart__button {
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .menu__cart {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cart__wrapp {
+        max-width: 343px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 39px;
+    }
+
+    .card__options {
+        margin-top: 20px;
+    }
+
+    .cart__card {
+        max-width: 343px;
+        height: 188px;
+    }
+
+    .cart__cards {
+        max-width: 343px;
+        gap: 30px;
+    }
+
+    .cart__cheque {
+        max-width: 343px;
+        width: 100%;
+    }
+    
+    .cart__img {
+        max-width: 143px;
+        width: 100%;
+        height: 188px;
+    }
+
+    .card__title {
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .svg-close {
+        width: 10px;
+    }
+
+    .option {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .card__description__wrapp {
+        max-width: 143px;
+        width: 100%;
+    }
+
+    .card__description {
+        max-width: 214px;
+        width: 100%;
+    }
+
+    .cart__cheque__wrapp {
+        max-width: 100%;
+    }
+
+    .cart__button {
+        font-size: 12px;
+        line-height: 14px;
+        height: 32px;
+        text-transform: capitalize;
+        max-width: 166px;
+        width: 100%;
+    }
+
+    .buttons__cart {
+        margin: 0;
+        gap: 9px;
+    }
+
+    .shipping {
+        margin-top: 48px;
+    }
+
+    .cart__close {
+        right: 12px;
+        top: 23px
+    }
 }
