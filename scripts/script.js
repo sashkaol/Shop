@@ -29,6 +29,7 @@ closebtn.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
     isOpen = !isOpen;
     overlay.classList.remove("open");
+    menu.classList.remove("open");
     document.body.style.overflow = null;
 });
 

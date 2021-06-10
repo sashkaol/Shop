@@ -1,0 +1,173 @@
+.registration__wrapp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 64px;
+    margin-bottom: 96px;
+    display: flex;
+    gap: 128px;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    gap: 21px;
+}
+
+.registration__h {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    font-family: "Lato light";
+    font-weight: 300;
+}
+
+.radio__buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#gend {
+    width: 17px;
+    height: 17px;
+}
+
+.gender {
+    font-size: 11px;
+    font-family: "Lato light";
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__ps {
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    font-family: "Lato light";
+}
+
+.vector__reg {
+    margin-left: 20px;
+}
+
+.button__join {
+    fill: #A4A4A4;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    font-size: 17px;
+    line-height: 13px;
+    color: #A4A4A4;
+    font-family: "Lato light";
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid  #A4A4A4;
+    
+}
+
+.button__join:hover {
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #F16D7F;
+    border-color: #F16D7F;
+    transition: all 0.3s ease-in-out;
+}
+
+.input__but__reg:hover {
+    fill: #ffffff;
+    color: #ffffff;
+    background-color: #F16D7F;
+    border-color: #ffffff;
+    
+}
+
+.input__but__reg {
+    outline: none;
+    width: 167px;
+    height: 50px;
+    border: none;
+    background-color: #ffffff;
+    font-size: 17px;
+    line-height: 13px;
+    color: #4A4A4A;
+    font-family: "Lato light";
+    margin-top: 24px;
+    cursor: pointer;   
+}
+
+.buns {
+    max-width: 652px;
+    width: 100%;
+}
+
+.buns__h, .buns__text {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    font-family: "Lato light";
+    font-weight: 300;
+}
+
+.buns__h {
+    margin-bottom: 22px;
+}
+
+.bun {
+    list-style-image: url(img/galka.svg);
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    font-family: "Lato light";
+    padding: 16px 0 0 23px;
+}
+
+@media screen and (max-width: 1025px) and (min-width: 768px) {
+    .registration__wrapp {
+        max-width: 1000px;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 555px) {
+    .registration__wrapp {
+        padding: 10px;
+        box-sizing: border-box;
+        gap: 50px;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .registration__wrapp {
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 10px 0 10px;
+        box-sizing: border-box;
+    }
+
+    .buns {
+        box-sizing: border-box;
+    }
+
+    .buns__h {
+        margin-top: 40px;
+    }
+
+    .buns__text {
+        margin-top: 32px;
+        margin-bottom: 22px;
+    }
+
+    .bun {
+        margin-left: 20px;
+        padding-left: 15px;
+    }
+}

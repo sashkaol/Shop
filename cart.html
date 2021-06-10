@@ -13,12 +13,12 @@
         <div class="navbar__wrapp">
             <div class="img__left">
                 <a href="index.html" class="index"><img class="left" src="img/Group 2.svg" alt="logo"></a>
-                <img class="left" src="img/Forma 1.svg" alt="search">
+                <img class="left search" src="img/Forma 1.svg" alt="search">
             </div>
             <div class="img__right">
                 <img class="right burger" src="img/form.svg" alt="menu">
-                <img class="right" src="img/form3.svg" alt="profile">
-                <a href="#"><img class="right" src="img/Group 35.svg" alt="basket"></a>
+                <a href="registration.html"><img class="right registration" src="img/form3.svg" alt="profile"></a>
+                <a href="#"><img class="right basket" src="img/Group 35.svg" alt="basket"></a>
             </div>
         </div>
     </header>
@@ -28,6 +28,10 @@
             <div class="menu__list">
                 <h1 class="menu__h">MENU</h1>
                 <ul class="menu__ul">
+                    <div class="menu__hrefs">
+                        <li class="category__overlay"><a href="cart.html" class="to-cart">To Cart</a></li>
+                        <li class="category__overlay"><a href="registration.html" class="to-registration">Sign Up</a></li>
+                    </div>
                     <li class="category__overlay">MAN</li>
                         <ul class="category__li">
                             <li class="categories">Accessories</li>
@@ -67,7 +71,7 @@
                 <div class="cart__card">
                     <img class="cart__img" src="img/prod3.png" alt="cart img">
                     <div class="card__description">
-                        <div class="cart__close"><img src="img/cart_close.svg" alt="close"></div>
+                        <div class="cart__close"><img class="svg-close" src="img/cart_close.svg" alt="close"></div>
                         <div class="card__description__wrapp">
                             <h1 class="card__title">
                                 MANGO  PEOPLE  T&nbsp;-&nbsp;SHIRT
@@ -86,7 +90,7 @@
                 <div class="cart__card">
                     <img class="cart__img"  src="img/catalog men2.png" alt="cart img">
                         <div class="card__description">
-                            <div class="cart__close"><img src="img/cart_close.svg" alt="close"></div>
+                            <div class="cart__close"><img class="svg-close"  src="img/cart_close.svg" alt="close"></div>
                             <div class="card__description__wrapp">
                                 <h1 class="card__title">
                                     MANGO PEOPLE T&nbsp;-&nbsp;SHIRT
@@ -103,24 +107,26 @@
                         </div>
                 </div>
                 <div class="buttons__cart">
-                    <button class="cart__button">CLEAR SHOPPING CART</button>
+                    <button class="cart__button">Clear shopping cart</button>
                     <a href="catalog.html" class="to-catalog">
-                        <button class="cart__button">CONTINUE SHOPPING</button>
+                        <button class="cart__button">Continue shopping</button>
                     </a>
                 </div>
             </div>
             <div class="cart__input__form">
-                <h1 class="shipping__address">
-                    SHIPPING ADDRESS
-                </h1>
-                <form action="#">
-                    <div class="cart__form">
-                        <input class="input__field" type="text" placeholder="Bangladesh">
-                        <input class="input__field" type="text" placeholder="State">
-                        <input class="input__field" type="text" placeholder="Postcode / Zip">
-                    </div>
-                    <button class="input__but" type="submit">GET A QUOTE</button>
-                </form>
+                <div class="shipping">
+                    <h1 class="shipping__address">
+                        SHIPPING ADDRESS
+                    </h1>
+                    <form action="#">
+                        <div class="cart__form">
+                            <input class="input__field" type="text" placeholder="Bangladesh">
+                            <input class="input__field" type="text" placeholder="State">
+                            <input class="input__field" type="text" placeholder="Postcode / Zip">
+                        </div>
+                        <button class="input__but" type="submit">GET A QUOTE</button>
+                    </form>
+                </div>
                 <div class="cart__cheque">
                     <div class="cart__cheque__wrapp">
                         <div class="cheque__result">
