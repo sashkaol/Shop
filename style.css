@@ -9,6 +9,9 @@
     width: 100%;
     background: #222222;
     height: 75px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .navbar__wrapp {
@@ -197,6 +200,7 @@
     border-radius: 0 25px 25px 0;
     transition-property: all;
     transition-duration: 0.3s;
+    outline: none;
 }
 
 .but__sub:hover {
@@ -213,6 +217,7 @@
     border: none;
     border-radius: 25px 0 0 25px;
     padding-left: 22px;
+    outline: none;
 }
 
 .h__form {

@@ -6,6 +6,7 @@
     <title>Shop</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_index.css">
+    <link rel="stylesheet" href="overlay.css">
 </head>
 <body>
     <header class="navbar">
@@ -15,12 +16,46 @@
                 <img class="left" src="img/Forma 1.svg" alt="search">
             </div>
             <div class="img__right">
-                <img class="right" src="img/form.svg" alt="menu">
+                <img class="right burger" src="img/form.svg" alt="menu">
                 <img class="right" src="img/form3.svg" alt="profile">
                 <img class="right" src="img/Group 35.svg" alt="basket">
             </div>
         </div>
     </header>
+    <section class="overlay">
+        <div class="menu">
+            <button class="close"><img src="img/close.svg" alt="close"></button>
+            <div class="menu__list">
+                <h1 class="menu__h">MENU</h1>
+                <ul class="menu__ul">
+                    <li class="category">MAN</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Bags</li>
+                            <li class="categories">Denim</li>
+                            <li class="categories">T-Shirts</li>
+                        </ul>
+                    <li class="category">WOMAN</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Jackets & Coats</li>
+                            <li class="categories">Polos</li>
+                            <li class="categories">T-Shirts</li>
+                            <li class="categories">Shirts</li>
+                        </ul>
+                    <li class="category">KIDS</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Jackets & Coats</li>
+                            <li class="categories">Polos</li>
+                            <li class="categories">T-Shirts</li>
+                            <li class="categories">Shirts</li>
+                            <li class="categories">Bags</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
     <section class="top">
         <div class="man">
             <img class="badboy" src="img/Layer_57-removebg-preview 1.png" alt="man">
@@ -40,7 +75,7 @@
                     <span class="details">
                         30% OFF
                     </span>
-                    <span class="category">
+                    <span class="catalog__category">
                         FOR WOMEN
                     </span>
                 </div>
@@ -51,7 +86,7 @@
                     <span class="details">
                         HOT DEAL
                     </span>
-                    <span class="category">
+                    <span class="catalog__category">
                         FOR MEN
                     </span>
                 </div>
@@ -62,22 +97,24 @@
                     <span class="details">
                         NEW ARRIVALS
                     </span>
-                    <span class="category">
+                    <span class="catalog__category">
                         FOR KIDS
                     </span>
                 </div>
             </a>
         </div>
         <div class="accesories">
-            <img class="opac2" src="img/opac.svg" alt="opacity">
-            <div class="acces__caption">
-                <span class="details">
-                    LUXIROUS & TRENDY
-                </span>
-                <span class="category">
-                    ACCESORIES
-                </span>
-            </div>
+            <a href="catalog.html" class="acces__wrapp">
+                <img class="opac2" src="img/opac.svg" alt="opacity">
+                <div class="acces__caption">
+                    <span class="details">
+                        LUXIROUS & TRENDY
+                    </span>
+                    <span class="catalog__category">
+                        ACCESORIES
+                    </span>
+                </div>
+            </a>
         </div>
     </section>
     <section class="items">
@@ -90,8 +127,14 @@
             </h3>
             <div class="items__catalog">
                 <div class="product">
-                    <div class="prod__hov">
-                        <img class="prod" src="img/prod1.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod1.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
                     </div>
                     <div class="product__text">
                         <h1 class="product__title">
@@ -104,8 +147,14 @@
                     </div>
                 </div>
                 <div class="product">
-                    <div class="prod__hov">
-                        <img src="img/prod2.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod2.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
                     </div>
                     <div class="product__text">
                         <h1 class="product__title">
@@ -118,7 +167,15 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img src="img/prod3.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod3.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
+                    </div>
                     <div class="product__text">
                         <h1 class="product__title">
                             ELLERY X M'O CAPSULE
@@ -130,7 +187,15 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img class="prod" src="img/prod4.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod4.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
+                    </div>
                     <div class="product__text">
                         <h1 class="product__title">
                             ELLERY X M'O CAPSULE
@@ -142,7 +207,15 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img class="prod" src="img/prod5.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod5.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
+                    </div>
                     <div class="product__text">
                         <h1 class="product__title">
                             ELLERY X M'O CAPSULE
@@ -154,7 +227,15 @@
                     </div>
                 </div>
                 <div class="product">
-                    <img class="prod" src="img/prod6.png" alt="product">
+                    <div class="prod__picture">
+                        <img src="img/prod6.png" class="prod__img" alt="" />
+                        <a href="product.html" class="prod__hover d-flex justify-content-center align-items-center">
+                            <button class="prod__btn d-flex align-items-center">
+                                <img src="img/cart.svg" alt="">
+                                <span class="add">Add To Cart</span>
+                            </button>
+                        </a>
+                    </div>
                     <div class="product__text">
                         <h1 class="product__title">
                             ELLERY X M'O CAPSULE
@@ -238,5 +319,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

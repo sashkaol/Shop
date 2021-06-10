@@ -4,6 +4,7 @@
     justify-content: space-between;
     max-width: 1600px;
     margin: 0 auto;
+    margin-top: 75px;
 }
 
 .man {
@@ -51,7 +52,10 @@
 .clothes {
     margin-top: 65px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1140px;
+    width: 100%;
 }
 
 .opac {
@@ -101,7 +105,7 @@
     color: #FFFFFF;
 }
 
-.category {
+.catalog__category {
     font-family: "Lato black";
     font-size: 24px;
     color: #F16D7F;
@@ -184,6 +188,8 @@
 .product {
     background-color: #F8F8F8;
     box-sizing: border-box;
+    max-width: 360px;
+    width: 100%;
 }
 
 .product__text {
@@ -204,12 +210,6 @@
     margin-top: 13px;
     font-family: "Lato";
     max-width: 315px;
-}
-
-.prod {
-    width: 100%;
-    max-width: 360px;
-    z-index: 0;
 }
 
 .cost {
@@ -239,12 +239,6 @@
     font-weight: normal;
 }
 
-.prod__hov:hover {
-    background: linear-gradient(rgba(58, 56, 56, 0.86), rgba(58, 56, 56, 0.86));
-    transition: 0.7s;
-    z-index: 1;
-}
-
 .browse__but {
     display: flex;
     justify-content: center;
@@ -272,3 +266,61 @@
     transition-property: all;
     transition-duration: 0.3s;
 }
+
+.prod__picture {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+}
+  
+.prod__img {
+    max-width: 100%;
+    
+}
+  
+  .prod__hover {
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(58, 56, 56, 0.86);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  .prod__picture:hover .prod__hover {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .prod__btn {
+      background: none;
+      max-width: 138px;
+      height: 43px;
+      border: 1px solid #ffffff;
+      font-family: "Lato";
+      font-size: 14px;
+      color: #ffffff;
+      padding: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      outline: none;
+    }
+
+    .prod__btn:hover {
+        cursor: pointer;
+        background-color: #F16D7F;
+        transition: 0.3s ease;
+    }
+
+    .add {
+        margin-left: 7px;
+    }      
