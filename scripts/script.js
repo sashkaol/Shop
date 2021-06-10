@@ -31,3 +31,13 @@ overlay.addEventListener("click", () => {
     overlay.classList.remove("open");
     document.body.style.overflow = null;
 });
+
+
+const marker = document.querySelector(".marker");
+const summary = document.querySelector(".filter__summary");
+
+let isFill = false;
+        summary.addEventListener("click", () => {
+            isFill = !isFill;
+            marker.classList.toggle("fill");
+        });

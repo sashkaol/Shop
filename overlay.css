@@ -22,13 +22,13 @@
 
 .overlay.open {
     opacity: 1;
-    z-index: 2;
+    z-index: 4;
     pointer-events: all;
 }
 
 .menu.open {
     right: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 .burger {
@@ -73,7 +73,7 @@
     padding-top: 24px;
 }
 
-.category {
+.category__overlay {
     font-family: "Lato";
     list-style-type: none;
     font-size: 14px;

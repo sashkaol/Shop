@@ -1,0 +1,280 @@
+.menu__cart {
+    margin-top: 75px;
+    height: 148px;
+    background: #F8F3F4;
+}
+
+.menu__wrapp__cart {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__h__cart {
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.cart__wrapp {
+    max-width: 1140px;
+    width: 100%;
+    margin: 96px auto 128px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.cart__img {
+    max-width: 262px;
+    width: 100%;
+}
+
+.card__description {
+    max-width: 390px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card__description__wrapp {
+    max-width: 262px;
+    width: 100%;
+    margin: 22px 97px 62px 32px;
+}
+
+.cart__card {
+    background-color: #ffffff;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    display: flex;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.card__title {
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    font-family: "Lato";
+    font-weight: 400;
+}
+
+.card__options {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.option {
+    font-family: "Lato";
+    font-size: 22px;
+    line-height: 26px;
+    color: #575757;
+}
+
+.input__kolvo {
+    display: flex;
+}
+
+.kolvo {
+    border: 1px solid #EAEAEA;
+    margin-left: 24px;
+    width: 43px;
+    text-align: center;
+    outline: none;
+}
+
+.cost {
+    color: #F16D7F;
+}
+
+.buttons__cart {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.cart__button {
+    border: 1px solid #A4A4A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 234px;
+    width: 100%;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    font-family: "Lato light";
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.to-catalog {
+    max-width: 234px;
+    width: 100%;
+    text-decoration: none;
+}
+
+.cart__button:hover {
+    color: #ffffff;
+    background-color: #F16D7F;
+    border-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart__input__form {
+    max-width: 360px;
+    width: 100%;
+}
+
+.cart__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.input__field {
+    border: 1px solid #A4A4A4;
+    outline: none;
+    height: 44px;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 17px;
+    box-sizing: border-box;
+}
+
+.input__field::placeholder {
+    color: #B1B1B1;
+}
+
+.shipping__address {
+    font-family: "Lato light";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+}
+
+.input__but {
+    border: 1px solid #A4A4A4;
+    padding: 10px 14px;
+    background-color: #ffffff;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    font-family: "Lato light";
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.input__but:hover {
+    color: #ffffff;
+    background-color: #F16D7F;
+    border-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.cart__cheque {
+    margin-top: 58px;
+    background: #F5F3F3;
+    max-width: 360px;
+    width: 100%;
+    padding: 44px;
+    box-sizing: border-box;
+}
+
+.cart__cheque__wrapp {
+    max-width: 273px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+
+.cheque__sub-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    font-family: "Lato";
+}
+
+.cheque__grand-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    font-family: "Lato light";
+    margin-top: 12px;
+    text-align: right;
+}
+
+.cheque__grand-total__cost {
+    color: #F16D7F;
+    font-weight: 700;
+}
+
+.cart__hr {
+    border-bottom: 1px solid #E2E2E2;
+    width: 100%;
+    margin-top: 21px;
+}
+
+.proceed {
+    width: 100%;
+    height: 50px;
+    background-color: #F16D7F;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    font-family: "Lato light";
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    margin-top: 17px;
+    border: none;
+}
+
+.proceed:hover {
+    background-color: #ffffff;
+    color: #F16D7F;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.cart__close {
+    max-width: 18px;
+    width: 100%;
+    position: absolute;
+    right: 22px;
+    top: 28px;
+    cursor: pointer;
+}

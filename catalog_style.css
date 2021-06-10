@@ -3,13 +3,13 @@
     padding: 0;
 }
 
-.menu {
+.menu__catalog {
     margin-top: 75px;
     height: 148px;
     background: #F8F3F4;
 }
 
-.menu__wrapp {
+.menu__wrapp__catalog {
     max-width: 1140px;
     margin: 0 auto;
     height: 100%;
@@ -18,7 +18,7 @@
     align-items: center;
 }
 
-.menu__left {
+.menu__left__catalog {
     font-family: "Lato";
     font-weight: normal;
     font-size: 24px;
@@ -26,7 +26,7 @@
     color: #F16D7F;
 }
 
-.menu__right a {
+.menu__right__catalog a {
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
@@ -34,7 +34,7 @@
     font-family: "Lato light";
 }
 
-.menu__right a:hover {
+.menu__right__catalog a:hover {
     text-decoration: none;
     color: #F16D7F;
 }
@@ -50,6 +50,7 @@ a.arrivals {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    
 }
 
 .items__wrapp {
@@ -147,7 +148,8 @@ a.arrivals {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    max-height: 420px;
+    height: 100%;
   }
 
   .prod__btn {
@@ -204,19 +206,29 @@ a.arrivals {
     cursor: pointer;
     max-height: 30px;
     overflow: hidden;
-    transition: max-height 0.5s ease-in;
 }
 
-.filter summary::-webkit-details-marker {
+summary::-webkit-details-marker {
     display: none;
   }
 
-.filter summary::-moz-list-bullet {
+summary::-moz-list-bullet {
     list-style: none;
+}
+
+summary {
+    outline: none;
 }
 
 .filter__summary, .category__summary {
     outline: none;
+}
+
+.filter__summary {
+    font-family: "Lato black";
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 
 .filter__list {
@@ -228,6 +240,7 @@ a.arrivals {
     color: #6F6E6E;
     font-family: "Lato";
     position: absolute;
+    cursor: pointer;
 }
 
 .filter[open] {
@@ -246,7 +259,127 @@ a.arrivals {
     box-sizing: border-box;
     color: #EF5B70;
     font-weight: normal;
-    transition: color 0.2s ease-out;
+    transition: overflow 0.3s ease-in-out;
+    transition: max-height 3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 
-  
+.category__summary {
+    border-left: 5px solid #EF5B70;
+    padding: 12px;
+    border-bottom: 1px solid #EBEBEB;
+    margin: 12px 15px 12px 0;
+}
+
+.filter__category__list {
+    font-family: "Lato";
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin: 11px 17px;
+    list-style-type: none; 
+}
+
+.category__big__list {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}  
+
+.category__open {
+    max-height: 53px;
+    overflow: hidden; 
+}
+
+.category__open[open] {
+    max-height: 380px;
+    transition: overflow 0.8s ease-in-out;
+    transition: max-height 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.filter__size__check {
+    outline: none;
+    display: block;
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    max-height: 103px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.filter__size__check[open] {
+    max-height: 103px;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    overflow: visible;
+    transition: overflow 0.8s ease-in-out;
+    transition: max-height 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.size__choice {
+    transition: max-height 0.8s cubic-bezier(0.33, 1, 0.68, 1);
+    width: 79px;
+    margin-top: 5px;
+    margin-left: -8px;
+    background: #FFFFFF;
+    padding: 7px 0 11px 9px;
+    box-shadow: 6px 4px 35px rgba(98, 20, 20, 0.21);
+    z-index: 2;
+    position: absolute;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+}
+
+.check {
+    background-color: #FFFFFF;
+    border: 1px solid #EBEBEB;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.price {
+    margin-left: 30px;
+}
+
+.marker.fill {
+    fill: #EF5B70;
+}
+
+.pages__wrapp {
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 48px auto;
+}
+
+.ruler {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 2px;
+    padding: 12px;
+    gap: 23px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ruler__number.first {
+    color: #EF5B70;
+}
+
+.ruler__number {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: "Lato light";
+    color: #EBEBEB;
+    cursor: pointer;
+}
+
+.ruler__vector {
+    max-height: 16px;
+    height: 100%;
+    cursor: pointer;
+}

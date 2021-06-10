@@ -6,6 +6,7 @@
     <title>Catalog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="catalog_style.css">
+    <link rel="stylesheet" href="overlay.css">
 </head>
 <body>
     <header class="navbar">
@@ -15,16 +16,50 @@
                 <img class="left" src="img/Forma 1.svg" alt="search">
             </div>
             <div class="img__right">
-                <img class="right" src="img/form.svg" alt="menu">
+                <img class="right burger" src="img/form.svg" alt="menu">
                 <img class="right" src="img/form3.svg" alt="profile">
-                <img class="right" src="img/Group 35.svg" alt="basket">
+                <a href="cart.html"><img class="right" src="img/Group 35.svg" alt="basket"></a>
             </div>
         </div>
     </header>
-    <section class="menu">
-        <div class="menu__wrapp">
-            <h1 class="menu__left">NEW ARRIVALS</h1>
-        <div class="menu__right">
+    <section class="overlay">
+        <div class="menu">
+            <button class="close"><img src="img/close.svg" alt="close"></button>
+            <div class="menu__list">
+                <h1 class="menu__h">MENU</h1>
+                <ul class="menu__ul">
+                    <li class="category__overlay">MAN</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Bags</li>
+                            <li class="categories">Denim</li>
+                            <li class="categories">T-Shirts</li>
+                        </ul>
+                    <li class="category__overlay">WOMAN</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Jackets & Coats</li>
+                            <li class="categories">Polos</li>
+                            <li class="categories">T-Shirts</li>
+                            <li class="categories">Shirts</li>
+                        </ul>
+                    <li class="category__overlay">KIDS</li>
+                        <ul class="category__li">
+                            <li class="categories">Accessories</li>
+                            <li class="categories">Jackets & Coats</li>
+                            <li class="categories">Polos</li>
+                            <li class="categories">T-Shirts</li>
+                            <li class="categories">Shirts</li>
+                            <li class="categories">Bags</li>
+                        </ul>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="menu__catalog">
+        <div class="menu__wrapp__catalog">
+            <h1 class="menu__left__catalog">NEW ARRIVALS</h1>
+        <div class="menu__right__catalog">
             <a href="#" class="home">HOME / </a>
             <a href="#" class="men">MEN / </a>
             <a href="#" class="arrivals">NEW ARRIVALS</a>
@@ -35,13 +70,28 @@
         <div class="navigate__wrapp">
             <div class="navigate__list">
                 <details class="filter">
-                    <summary class="filter__summary">FILTER</summary>
+                        <summary class="filter__summary">FILTER 
+                        <div class="filters__marker">
+                            <svg class="marker" width="15" height="10" viewBox="0 0 15 10" xmlns="http://www.w3.org/2000/svg">
+                            <path id="path1" d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                            </svg>
+                        </div>
+                        </summary>
                     <div class="category">
-                        <details>
+                        <details class="category__open">
                             <summary class="category__summary">CATEGORY</summary>
-                            <ul>
-                                <li>Accessories</li>
-                                <li></li>
+                            <ul class="category__big__list">
+                                <li class="filter__category__list">Accessories</li>
+                                <li class="filter__category__list">Bags</li>
+                                <li class="filter__category__list">Denim</li>
+                                <li class="filter__category__list">Hoodies & Sweatshirts</li>
+                                <li class="filter__category__list">Jackets & Coats</li>
+                                <li class="filter__category__list">Polos</li>
+                                <li class="filter__category__list">Shirts</li>
+                                <li class="filter__category__list">Shoes</li>
+                                <li class="filter__category__list">Sweaters & Knits</li>
+                                <li class="filter__category__list">T-Shirts</li>
+                                <li class="filter__category__list">Tanks</li>
                             </ul>
                         </details>
                         <details>
@@ -55,9 +105,29 @@
             </div>
             <div class="filters">
                 <ul class="filter__list">
-                    <li>TRENDING NOW</li>
-                    <li>SIZE</li>
-                    <li>PRICE</li>
+                    <li>TRENDING NOW&nbsp;&nbsp;&nbsp;<img src="img/Vector.svg" alt=""></li>
+                    <li>
+                        <details class="filter__size__check">
+                            <summary>
+                                SIZE&nbsp;&nbsp;&nbsp;<img src="img/Vector.svg" alt="">
+                            </summary>
+                            <div class="size__choice">
+                                <p class="size__filter">
+                                    <input class="check" type="checkbox" name="" id="">XS
+                                </p>
+                                <p class="size__filter">
+                                    <input class="check" type="checkbox" name="" id="">S
+                                </p>
+                                <p class="size__filter">
+                                    <input class="check" type="checkbox" name="" id="">M
+                                </p>
+                                <p class="size__filter">
+                                    <input class="check" type="checkbox" name="" id="">L
+                                </p>
+                            </div>
+                        </details>
+                    </li>
+                    <li class="price">PRICE&nbsp;&nbsp;&nbsp;<img src="img/Vector.svg" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -256,6 +326,22 @@
                 </div>
             </div>
         </div>
+        <div class="pages">
+            <div class="pages__wrapp">
+                <div class="ruler__block">
+                    <ul class="ruler">
+                        <li class="ruler__vector"><img src="img/Vector left.svg" alt=""></li>
+                        <li class="ruler__number first">1</li>
+                        <li class="ruler__number">2</li>
+                        <li class="ruler__number">3</li>
+                        <li class="ruler__number">4</li>
+                        <li class="ruler__number">5</li>
+                        <li class="ruler__number">6.....20</li>
+                        <li class="ruler__vector"><img src="img/Vector right.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="feature">
         <div class="feature__wrapp">
@@ -324,5 +410,6 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
