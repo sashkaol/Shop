@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+/*панель навигации*/
+
 .navbar {
     width: 100%;
     background: #222222;
@@ -18,12 +20,6 @@
     align-items: center;
 }
 
-.top {
-    background: #F1E4E6;
-    display: flex;
-    justify-content: space-between;
-}
-
 .left {
     margin-right: 41px;
 }
@@ -32,13 +28,7 @@
     margin-left: 33px;
 }
 
-.man {
-    width: 50%;
-}
-
-.badboy {
-    width: 100%;
-}
+/*подключение шрифтов*/
 
 @font-face {
     font-family: "Lato";
@@ -48,35 +38,6 @@
 @font-face {
     font-family: "Lato black";
     src: url(font/Lato-Bold.ttf);
-}
-
-.main {
-    display: flex;
-    align-items: center; 
-    width: 800px;
-}
-
-.name {
-    margin-left: 64px;
-    padding-left: 16px;
-    border-left: 12px solid #F16D7F;
-}
-
-.one {
-    font-family: "Lato";
-    color: #222222;
-    font-size: 48px;
-    line-height: 58px;
-}
-
-.two {
-    font-family: "Lato black";
-    color: #222222;
-    font-size: 32px;    
-}
-
-.pink {
-    color: #F16D7F;
 }
 
 .footer {
@@ -107,12 +68,16 @@
     align-items: center;
     justify-content: center;
     fill: #222224;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 .icons:hover {
     background-color:#F16D7F;
     fill: #FFFFFF;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 @font-face {
@@ -127,84 +92,6 @@
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
-}
-
-.catalog {
-    max-width: 1140px;
-    margin: 0 auto;
-}
-
-.clothes {
-    margin-top: 65px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.opac {
-    opacity: 0.9;
-    width: 360px;
-    height: 260px;
-}
-
-.opac2 {
-    opacity: 0.9;
-    height: 180px;
-}
-
-.women {
-    position: relative;
-    height: 260px;
-    background-image: url(img/woman.png);
-}
-
-.catalog__caption {
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 154px;
-    top: 105px;
-    left: 103px;
-}
-
-.acces__caption {
-    position: absolute;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 160px;
-    top: 65px;
-    left: 491px;
-}
-
-.details {
-    font-family: "Lato";
-    font-size: 16px;
-    color: #FFFFFF;
-}
-
-.category {
-    font-family: "Lato black";
-    font-size: 24px;
-    color: #F16D7F;
-}
-
-.men {
-    position: relative;
-    height: 260px;
-    background-image: url(img/men.png);
-}
-.kids {
-    position: relative;
-    height: 260px;
-    background-image: url(img/rids.png);
-}
-
-.accesories {
-    position: relative;
-    height: 180px;
-    margin-top: 30px;
-    background-image: url(img/acces.png);
 }
 
 .feature {
@@ -308,11 +195,15 @@
     line-height: 17px;
     color: #FFFFFF;
     border-radius: 0 25px 25px 0;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 .but__sub:hover {
     background-color: #E05C6E;
     cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.3s;
 }
 
 .inp__sub {
@@ -341,4 +232,3 @@
     font-size: 18px;
     line-height: 30.1px;
 }
-

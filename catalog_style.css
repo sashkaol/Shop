@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    height: 148px;
+    background: #F8F3F4;
+}
+
+.menu__wrapp {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__left {
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.menu__right a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    font-family: "Lato light";
+}
+
+a.arrivals {
+    font-family: "Lato black";
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+
+.items {
+    margin-top: 96px;
+}
+
+.items__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 48px;
+}
+
+.items__wrapp {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.product {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+}
+
+.product__text {
+    padding-left: 17px;
+}
+
+.product__title {
+    font-family: "Lato";
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 24px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 13px;
+    font-family: "Lato";
+    max-width: 315px;
+}
+
+.prod {
+    width: 100%;
+    max-width: 360px;
+    z-index: 0;
+}
+
+.cost {
+    margin-top: 18px;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+    margin-bottom: 20px;
+}
+
+.items__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    font-family: "Lato";
+    font-weight: normal;
+}
+
+.items__subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    font-family: "Lato";
+    text-align: center;
+    font-weight: normal;
+}
+
+.prod__hov:hover {
+    background: linear-gradient(rgba(58, 56, 56, 0.86), rgba(58, 56, 56, 0.86));
+    transition: 0.7s;
+    z-index: 1;
+}
