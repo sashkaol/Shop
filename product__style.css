@@ -154,4 +154,22 @@
       margin-left: 23px;
   }
 
+.carousel-control-next { 
+    background-image: url(img/carusel-right.svg); 
+    width: 30px; 
+    height: 48px; 
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 365px;
+}
+
+.carousel-control-prev {
+    background-image: url(img/carusel-left.svg);
+    width: 30px; 
+    height: 48px;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: 365px;
+}
+
   
